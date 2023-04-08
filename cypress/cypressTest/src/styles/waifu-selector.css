@@ -1,0 +1,28 @@
+.waifu-container{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    background-image: linear-gradient(rgb(124, 38, 41), rgba(124, 38, 41, 0));
+}
+.waifu-button{
+    width: 20%;
+    height: 10%;
+    border-width: 1px;
+    border-radius: 10px;
+    position: relative;
+    left: 90%;
+    top: 70%;
+    transition: width .5s, height .5s, transform .5s;
+    background-image: linear-gradient(#FFA400, #CF4520, #7C2629);
+}
+.waifu-button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.content-container{
+    width: 50%;
+    height: 100%;
+}
