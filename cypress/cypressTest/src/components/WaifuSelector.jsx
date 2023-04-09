@@ -1,5 +1,5 @@
 import React from 'react';
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import Button from './Button';
 import "../styles/waifu-selector.css"
 
@@ -7,9 +7,9 @@ const WaifuSelector = () => {
 	const [pickData, setPickData] = useState(null);
 
 	const getWaifu = () => {
-		fetch("https://api.waifu.im/search?gif=true")
+		fetch("https://api.waifu.im/search")
 		.then(res => res.json())
-		.then(data => console.log(data))
+		.then(data => setPickData(data.images[0].url));
 	}
 
 	return (
@@ -19,7 +19,7 @@ const WaifuSelector = () => {
 				<Button func={getWaifu}/>
 			</div>
 			<div>
-				awa
+				<img className="img-container" src={pickData} alt="Tu Waifu xD"/>
 			</div>
 		</div>
 	);

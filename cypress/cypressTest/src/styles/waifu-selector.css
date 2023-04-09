@@ -12,7 +12,7 @@
     border-width: 1px;
     border-radius: 10px;
     position: relative;
-    left: 90%;
+    left: 80%;
     top: 70%;
     transition: width .5s, height .5s, transform .5s;
     background-image: linear-gradient(#FFA400, #CF4520, #7C2629);
@@ -24,5 +24,10 @@
 
 .content-container{
     width: 50%;
+    height: 100%;
+}
+
+.img-container{
+    width: 100%;
     height: 100%;
 }
